@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using System.ComponentModel;
+using System.Collections.ObjectModel;
 
 namespace Engine.Models
 {
@@ -66,6 +67,14 @@ namespace Engine.Models
                 _gold = value;
                 OnPropertyChanged(nameof(Gold));
             }
-        }    
+        }  
+        
+        //Creates class for player inventory
+        public ObservableCollection<GameItem> Inventory { get; set; }
+
+        public Player()
+        {
+            Inventory = new ObservableCollection<GameItem>();
+        }
     }
 }
