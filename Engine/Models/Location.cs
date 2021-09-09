@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Linq;
 
 namespace Engine.Models
 {
@@ -12,5 +13,6 @@ namespace Engine.Models
         public string Name { get; set; }
         public string Description { get; set; }
         public string ImageName { get; set; }
+        public List<Quest> QuestsAvailableHere { get; set; } = new List<Quest>();
     }
 }
