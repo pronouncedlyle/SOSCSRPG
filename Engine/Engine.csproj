@@ -6,10 +6,22 @@
 
   <ItemGroup>
     <None Remove="Images\Locations\Home.png" />
+    <None Remove="Images\Monsters\GiantSpiderTemp.png" />
+    <None Remove="Images\Monsters\RatTemp.png" />
+    <None Remove="Images\Monsters\SnakeTemp.png" />
   </ItemGroup>
 
   <ItemGroup>
     <Resource Include="Images\Locations\Home.png" />
+    <Resource Include="Images\Monsters\GiantSpiderTemp.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Monsters\RatTemp.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Monsters\SnakeTemp.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
 
 </Project>
